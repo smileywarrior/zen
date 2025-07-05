@@ -34,7 +34,8 @@ const handleSubmit = async (e: React.FormEvent) => {
   }
 
   try {
-  await axios.post("https://zen2-mn3g.onrender.com/api/waitlist", formData);
+  axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/waitlist`, formData);
+
 // 👈 Send data to backend
 
     toast({
