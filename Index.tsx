@@ -34,7 +34,8 @@ const handleSubmit = async (e: React.FormEvent) => {
   }
 
   try {
-    await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/waitlist`, formData); // 👈 Send data to backend
+  await axios.post("https://zen2-mn3g.onrender.com/api/waitlist", formData);
+// 👈 Send data to backend
 
     toast({
       title: "Success 🎉",
@@ -109,7 +110,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
               India's Talent 
               <span className="block bg-gradient-to-r from-zenora-blue to-zenora-purple bg-clip-text text-transparent">
-                Lachpad
+                Lanchpad
               </span>
             </h1>
             <p className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
